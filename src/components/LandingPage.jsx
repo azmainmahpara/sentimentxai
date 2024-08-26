@@ -68,7 +68,7 @@ const LandingPage = ({ onJoinWaitlistClick }) => {
         </p>
         <div className="flex justify-center my-10">
           <a href="https://www.instagram.com/sentimentx.ai/?igsh=MXg5MHY1NWNkNHRsYw%3D%3D" className="bg-gradient-to-r from-red-500 to-red-800 py-3 px-4 mx-3 rounded-md">
-            <span className="text-white">Social Links</span>
+            <span className="text-white">Instagram</span>
           </a>
           <button
             onClick={onJoinWaitlistClick}
