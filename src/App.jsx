@@ -1,6 +1,7 @@
 import { useState } from "react";
 import LandingPage from "./components/LandingPage";
-import WaitlistForm from "./components/waitlistform";
+import WaitlistForm from "./components/WaitlistForm";
+import { Analytics } from '@vercel/analytics/react'; // Import Vercel Analytics
 
 const App = () => {
   const [showWaitlistForm, setShowWaitlistForm] = useState(false);
@@ -20,6 +21,7 @@ const App = () => {
       ) : (
         <LandingPage onJoinWaitlistClick={handleWaitlistClick} />
       )}
+      <Analytics /> {/* Add Vercel Analytics component */}
     </div>
   );
 };
